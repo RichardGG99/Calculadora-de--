@@ -30,8 +30,8 @@ body {
 }
 
 .lcd_containerA {
-    width: 100%;
-    margin: 2rem;
+   width: 100%;
+   margin: 3rem;
 }
 
 .lcd_containerA > input {
@@ -78,36 +78,43 @@ body {
     padding: 1%;
     margin: 25px;
     flex-wrap: wrap;
+    gap: 20px;
     text-align: center;
     align-items: center;
     justify-content: center;
-    width: 90%;
-    height: 90%;
+    width: 29.9rem;
+    height: 60%;
     border-radius: 5px;
-    margin: 50px;
+    margin: 47px;
     box-shadow: 8px 5px 3px 3px rgba(185,184,1184, 0.394);
 }
 
+.contenedorB {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+ }
+
  .lcd_containerB {
-    margin: 1.5rem;
     width: 100%;
+   margin: 3rem;
 }
  
  .lcd_containerB > input {
     width: 85%;
     padding: 10%;
-    border-radius: 10px;
+    border-radius: 5px;
  }
  
-.buttons_container2 {
-    padding: 100%;
+.buttons_container2 { 
     display: flex;
-    height: 40%;
+    height: 40%; 
     padding: 40%;
-}
+ } 
  
  .btns_ByE{
     display: flex;
+    justify-content: center; 
  }
 
  #btn_borrar  {
@@ -132,7 +139,6 @@ body {
     padding: 20%;
     text-align: center;
     align-items: center;
-    justify-content: center;
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 500;
@@ -141,15 +147,6 @@ body {
     border: none;
     border-radius: 5px;
  }
-
-.contenedorB { 
-    display: flex;
-    flex-wrap: wrap;
-    width: 31.6rem;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-} 
 
  .btn:hover {
     cursor: pointer;
@@ -160,6 +157,7 @@ body {
  .main_container { 
     display: flex;
     flex-wrap: wrap;
+    gap: 5px;
 }
 
 
