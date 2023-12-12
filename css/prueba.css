@@ -1,112 +1,155 @@
+:root {
+    --colorFondo: #303030;
+    --gris: rgb(136,136,136);
+}
+
 * {
     box-sizing: border-box;
-    /* color del fondo de la pagina */
-    background-color: aliceblue;
-    /*  */
+    padding: 0;
     margin: 0;
-    /*  */
-    height: 0;
 }
 
-/*body {
-    margin: 0;
-    height: 0;
-    background-color: #08090b;
-}*/
-
-/* contenedor padre */
-.main_container {
-    display: flex;
-    /* flex-wrap: wrap; */
-    justify-content: space-around;
-    justify-content: center;
-    text-align: center;
-    gap: 1rem;
-    /* grid-template-columns: 1fr 1fr; */
-}
-
-.contenedorA {
-    background-color: dodgerblue;
-    height: 20rem;
-    padding: 5rem;
-    margin: 3rem;
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--gris);
+ }
+ .main_container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    border-radius: .5rem;
-    box-shadow: 5px 5px 10px 2px;
-    /* width: 100%; */
-    /* height: 200px; */
-
 }
+.contenedorA {
+    background-color: rgba(0, 0, 0, 0.604);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 29rem;
+    width: 30rem;
+    margin: 3rem;
+    border-radius: 1rem;
+}
+
 .lcd_containerA {
     display: flex;
     justify-content: center;
-    margin-top: -15rem;
-    
+    height: 6rem;
+    margin: 1rem;
 }
+
 .lcd_containerA > input {
+   width: 28rem;
+   font-size: 3rem;
+   border-radius: 1.5rem;
+}
+
+.buttons_container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 20rem;
-    height: 1rem;
-    padding: 1rem;
+    /* background-color: blue; */
+}
+
+.btns_porcentaje {   /* aqui aun no hay codigo */
+   
+}
+
+.btn {
+    font-size: 20px;
+    margin: 1rem;
+    width: 4.5rem;
+    height: 2rem;
+    border-radius: .7rem;
+    box-shadow: 0 0 20px rgb(68, 246, 255);
 
 }
-.buttons_container {
-   display: flex;
-   justify-content: center;
+
+.btn:hover {
+    cursor: pointer;
 }
-.btns_porcentaje {
-    display: flex;
-    justify-content: center;
-    /* grid-template-columns: repeat(3,2fr);  */
-    /* gap: 29px; */
-    
-}
-.btn {
-    /* display: flex; */
-    height: 1.2rem;
-    padding: 1rem;
-}
+
 .contenedorB {
-    background-color: gold;
-    height: 20rem;
-    padding: 5rem;
-    margin: 3rem;
+    background-color: rgba(0, 0, 0, 0.604);
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    border-radius: .5rem;
-    box-shadow: 5px 5px 10px 2px;
+    justify-content: center;
+    height: 29rem;
+    width: 30rem;
+    margin: 3rem;
+    border-radius: 1rem;
 }
+
 .lcd_containerB {
     display: flex;
     justify-content: center;
-    margin-top: -15rem;
+    height: 6rem;
+    margin: 1rem;
 }
-.lcd_containerB > input {
-    width: 12rem;
-    height: 1rem;
-    padding: 1rem;
-    text-align: center;
 
+.lcd_containerB > input {
+    width: 28rem;
+    font-size: 3rem;
+    border-radius: 1.5rem;
 }
+
+.lcd_containerC {
+    display: flex;
+    justify-content: center;
+    margin: 7rem;
+    margin-top: 13rem;
+}
+
+.lcd_containerC > input {
+    width: 28rem;
+    font-size: 3rem;
+    border-radius: 1.5rem;
+}
+
 .buttons_container2 {
     display: flex;
-   justify-content: center;
+    justify-content: center;
+    /* background-color: blueviolet; */
 }
+
 .btns_ByE {
    display: flex;
    justify-content: center;
+   margin-top: -24rem;
+   height: 1rem;
    gap: 3rem;
 }
+
 .btnB {
-    height: 1.2rem;
-    padding: 1rem;
-    font-size: 40px;
+   margin: 5rem;
+   height: 3.5rem;
+   width: 7rem;
+   font-size: 1.5rem;
+   background-color: rgb(249, 51, 51);
+   box-shadow: 0 0 15px rgb(255, 90, 68);
+   transition: all ease-in-out .5s;
+   border-radius: .7rem;
 }
+
 .btnE {
-    height: 1.2rem;
-    padding: 1rem;
+   margin: 5rem;
+   height: 3.5rem;
+   width: 7rem;
+   font-size: 1.5rem;
+   box-shadow: 0 0 15px #4f9;
+   background-color: #4f9;
+   transition: all ease-in .5s;
+   border-radius: .7rem;
+}
+
+.btnB:hover {
+    cursor: pointer;
+    height: 3.8rem;
+    width: 7.5rem;
+}
+
+.btnE:hover {
+    cursor: pointer;
+    height: 3.8rem;
+    width: 7.5rem;
 }
